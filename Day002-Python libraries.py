@@ -1,4 +1,5 @@
 import random
+from codecs import IncrementalDecoder
 
 coin = random.choice(["heads", "tails"])
 print(coin)
@@ -13,8 +14,11 @@ for card in cards:
     break
 
 import statistics
-
 print(statistics.mean([1000, 500]))
+
+import sys
+print(sys.version)
+print("hello, my name is", sys.argv[1])
 
 
 
