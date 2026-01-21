@@ -12,4 +12,11 @@ for card in cards:
     print(cards)
     break
 
+import statistics
+
+print(statistics.mean([1000, 500]))
+
+
+
+
 
