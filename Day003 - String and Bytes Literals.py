@@ -72,6 +72,7 @@ print(f"List a contains:{"\n".join(a)}")
 print(f"List a contains:\n{"\n".join(a)}")
 
 #nest f-string
+#CPython does not limit nesting of f-strings.
 #Portable Python programs should not use more than 5 levels of nesting
 name = 'world'
 print(f'Repeated:{f' hello {name}' * 3}')
