@@ -18,7 +18,11 @@ print(statistics.mean([1000, 500]))
 
 import sys
 print(sys.version)
-print("hello, my name is", sys.argv[1])
+print(sys.version_info)
+
+import cowsay
+print(cowsay.__doc__)
+
 
 
 
