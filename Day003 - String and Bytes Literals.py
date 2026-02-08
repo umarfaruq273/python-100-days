@@ -77,4 +77,41 @@ print(f"List a contains:\n{"\n".join(a)}")
 name = 'world'
 print(f'Repeated:{f' hello {name}' * 3}')
 
+#numeric literal
+10.  # (equivalent to 10.0)
+.001  # (equivalent to 0.001)
+1.0e3  # (represents 1.0×10³, or 1000.0)
+1.166e-5  # (represents 1.166×10⁻⁵, or 0.00001166)
+6.02214076e+23  # (represents 6.02214076×10²³, or 602214076000000000000000.)
+1e3  # (equivalent to 1.e3 and 1.0e3)
+0e0  # (equivalent to 0.)
+3+4.2j # imaginary literal end with character "j"
+# valid examples of imaginary literal
+4.2j
+3.14j
+10.j
+.001j
+1e100j
+3.14e-10j
+3.14_15_93j
+
+#operators and delimiters
+OP:
+   | assignment_operator
+   | bitwise_operator
+   | comparison_operator
+   | enclosing_delimiter
+   | other_delimiter
+   | arithmetic_operator
+   | "..."
+   | other_op
+
+assignment_operator:   "+=" | "-=" | "*=" | "**=" | "/="  | "//=" | "%=" |
+                       "&=" | "|=" | "^=" | "<<=" | ">>=" | "@="  | ":="
+bitwise_operator:      "&"  | "|"  | "^"  | "~"   | "<<"  | ">>"
+comparison_operator:   "<=" | ">=" | "<"  | ">"   | "=="  | "!="
+enclosing_delimiter:   "("  | ")"  | "["  | "]"   | "{"   | "}"
+other_delimiter:       ","  | ":"  | "!"  | ";"   | "="   | "->"
+arithmetic_operator:   "+"  | "-"  | "**" | "*"   | "//"  | "/"   | "%"
+other_op:              "."  | "@"
 
