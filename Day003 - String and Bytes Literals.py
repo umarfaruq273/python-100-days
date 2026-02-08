@@ -41,6 +41,13 @@ print('\x50', '\x51', '\x52', '\x53', '\x54', '\x55')
 print('\N{LATIN CAPITAL LETTER P}')
 print('\N{SNAKE}')
 
+#hexadecimal unicode character
+print('\u1234', '\U0001f40d')
+
+#unrecognized escape sequences
+print('\q')
+print(list('\q'))
+
 #bytes literal
 print(b'\x89PNG\r\n\x1a\n')
 print(list(b'\x89PNG\r\n\x1a\n'))
@@ -50,5 +57,23 @@ who = 'nobody'
 nationality = 'Spanish'
 print(f'{who.title()} expects the {nationality} Inquisition!')
 print(f'{{...}}')
+
+#expressions in formatted strings
+print(f'{(half := 1/2)}, {half * 42}')
+print(f'{(half := 1/2)}, {half * 42}')
+
+#reusing outer f-string quoting type inside a replacement field
+a = dict(x=2)
+print(f"abc {a["x"]} def")
+
+#backslash is allowed in replacement field
+a = ["a", "b", "c"]
+print(f"List a contains:{"\n".join(a)}")
+print(f"List a contains:\n{"\n".join(a)}")
+
+#nest f-string
+#Portable Python programs should not use more than 5 levels of nesting
+name = 'world'
+print(f'Repeated:{f' hello {name}' * 3}')
 
 
